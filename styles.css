@@ -1,29 +1,18 @@
-/*  your css code here. If applicable */
-body{
-	display:grid;
-
-	width:100vw;
-	height:100vh;
-	
-}
 .grid-container{
-	display:flex;
-	grid-gap:10px 10px;
-	flex-wrap:wrap;
-	flex-direction:row;
-	justify-items:space-evenly;
-		grid-gap:10px 10px;
-	
+	display:grid;
+	gap:10px;
+	width:100vw;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
 }
 .grid-item{
-  
-	width:200px;
-	height:150px;
-	border-radius:5px;
-	background-color:lightgray;
-	font-size:40px;
+	display:flex;
 	justify-content:center;
 	align-items:center;
-	margin:5px;
-
+	background-color:lightgray;
+	height:150px;
+	width:200px;
+	border-radius:5px;
+	font-size:40px;
+	margin:10px;
 }
